@@ -18,5 +18,22 @@
   },
   "componentFramework": "glass-easel",
   "sitemapLocation": "sitemap.json",
-  "lazyCodeLoading": "requiredComponents"
+  "lazyCodeLoading": "requiredComponents",
+  "tabBar": {
+    "_comment": "这是一段注释示例,下方LIST增加内容可以增加页面，这是底部导航栏",
+    "color": "#000000",
+    "selectedColor": "#07c160",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "服药提醒"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "家庭药箱"
+      }
+      
+    ]
+  }
 }
