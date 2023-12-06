@@ -32,6 +32,10 @@
       {
         "pagePath": "pages/logs/logs",
         "text": "家庭药箱"
+      },
+      {
+        "pagePath": "pages/empty/empty",
+        "text": "个人中心"
       }
       
     ]
