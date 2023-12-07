@@ -1,0 +1,7 @@
+<view class="personal-center">
+  <image class="avatar" src="{{ userInfo.avatarUrl }}" mode="aspectFill"></image>
+  <text class="nickname">{{ userInfo.nickName }}</text>
+  
+  <button wx:if="{{ !logged }}" open-type="getUserInfo" bindgetuserinfo="onGetUserInfo">登录</button>
+  <button wx:if="{{ logged }}" bindtap="onLogout">退出登录</button>
+</view>

@@ -1,7 +1,9 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/f",
+    "pages/ff"
   ],
   "window": {
     "navigationBarTextStyle": "black",
@@ -32,8 +34,11 @@
       {
         "pagePath": "pages/logs/logs",
         "text": "家庭药箱"
+      },
+      {
+        "pagePath": "pages/f",
+        "text": "个人中心"
       }
-      
     ]
   }
 }

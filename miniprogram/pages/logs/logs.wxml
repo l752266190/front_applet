@@ -1,7 +1,12 @@
-<!--logs.wxml-->
-<navigation-bar title="查看启动日志" back="{{true}}" color="black" background="#FFF"></navigation-bar>
-<scroll-view class="scrollarea" scroll-y type="list">
-  <block wx:for="{{logs}}" wx:key="timeStamp" wx:for-item="log">
-    <view class="log-item">{{index + 1}}. {{log.date}}</view>
-  </block>
-</scroll-view>
+<!-- index.wxml -->
+<view class="header">
+  <image src="{{userInfo.avatarUrl}}" class="icon"></image>
+  <text class="title">家庭药箱</text>
+  <view class="add-btn">添加</view>
+</view>
+<view class="content">
+  <view class="add-reminder-btn">添加药品</view>
+  <view class="date-menu">
+    <!-- 在这里添加你的日期菜单 -->
+  </view>
+</view>
