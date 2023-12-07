@@ -20,7 +20,7 @@
   "sitemapLocation": "sitemap.json",
   "lazyCodeLoading": "requiredComponents",
   "tabBar": {
-    "_comment": "这是一段注释示例,下方LIST增加内容可以增加页面，这是底部导航栏",
+    "_comment": "这是一段注例,下方LIST增加内容可以增加页面，这是底部导航栏",
     "color": "#000000",
     "selectedColor": "#07c160",
     "backgroundColor": "#ffffff",
