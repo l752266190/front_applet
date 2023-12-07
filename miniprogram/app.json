@@ -1,7 +1,9 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/f",
+    "pages/ff"
   ],
   "window": {
     "navigationBarTextStyle": "black",
@@ -34,10 +36,9 @@
         "text": "家庭药箱"
       },
       {
-        "pagePath": "pages/empty/empty",
+        "pagePath": "pages/f",
         "text": "个人中心"
       }
-      
     ]
   }
 }
