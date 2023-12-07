@@ -49,5 +49,20 @@ Component({
         icon: 'success',
       });
     },
+    onViewProfile() {
+      // 处理查看个人信息按钮的点击事件
+      if (this.data.logged) {
+        // 在这里处理查看个人信息的逻辑，可以跳转到个人信息页面或者显示个人信息弹窗
+        wx.showToast({
+          title: '查看个人信息',
+          icon: 'none',
+        });
+      } else {
+        wx.showToast({
+          title: '请先登录',
+          icon: 'none',
+        });
+      }
+    },
   },
 })
