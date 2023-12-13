@@ -29,21 +29,15 @@
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text": "服药提醒",
-        "iconPath": "images/alarm.png",
-				"selectedIconPath": "images/alarm.png"
+        "text": "服药提醒"
       },
       {
         "pagePath": "pages/logs/logs",
-        "text": "家庭药箱",
-        "iconPath": "images/box.png",
-				"selectedIconPath": "images/box.png"
+        "text": "家庭药箱"
       },
       {
         "pagePath": "pages/f",
-        "text": "个人中心",
-        "iconPath": "images/user.png",
-				"selectedIconPath": "images/user.png"
+        "text": "个人中心"
       }
     ]
   }
