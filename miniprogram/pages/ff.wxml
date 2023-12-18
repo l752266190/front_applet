@@ -1,4 +1,3 @@
-<!-- personalInfo.wxml -->
 <view class="container">
   <view class="item" bindtap="onEditAvatar">头像：{{userInfo.avatarUrl}}</view>
   <view class="item" bindtap="onEditNickname">昵称：{{userInfo.nickName}}</view>
@@ -6,5 +5,6 @@
   <view class="item" bindtap="onEditBirthday">生日：{{userInfo.birthday}}</view>
   <view class="item" bindtap="onEditHeight">身高：{{userInfo.height}}</view>
   <view class="item" bindtap="onEditWeight">体重：{{userInfo.weight}}</view>
+  <button class="back-btn" bindtap="onBack">返回</button>
   <button class="complete-btn" bindtap="onComplete">完成</button>
 </view>
