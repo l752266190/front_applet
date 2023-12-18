@@ -1,4 +1,3 @@
-// personalInfo.ts
 Component({
   data: {
     userInfo: {
@@ -34,6 +33,12 @@ Component({
       wx.showToast({
         title: '个人资料已更新',
         icon: 'success',
+      });
+    },
+    onBack() {
+      // 处理点击返回按钮的逻辑，可以是返回上一页或者其他操作
+      wx.navigateBack({
+        delta: 1, // 返回的页面数，如果 delta 大于现有页面数，则返回到首页
       });
     },
   },
