@@ -1,4 +1,3 @@
-// personalInfo.ts
 Component({
   data: {
     userInfo: {

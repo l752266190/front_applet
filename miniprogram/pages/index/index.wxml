@@ -1,12 +1,12 @@
-<!-- index.wxml -->
 <view class="header">
   <image src="{{userInfo.avatarUrl}}" class="icon"></image>
   <text class="title">服药提醒</text>
-  <view class="add-btn">添加</view>
+  <view class="add-btn" bindtap="addReminder">添加</view>
 </view>
 <view class="content">
   <view class="add-reminder-btn">添加服药提醒</view>
-  <view class="date-menu">
-    <!-- 在这里添加你的日期菜单 -->
+  <view wx:for="{{reminders}}" wx:for-item="reminder" wx:key="id" class="reminder-item">
+    <text>{{reminder.content}}</text>
+    <!-- 其他提醒内容的显示 -->
   </view>
 </view>
