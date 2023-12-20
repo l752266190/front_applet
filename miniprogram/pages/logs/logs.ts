@@ -1,21 +1,16 @@
 // logs.ts
-// const util = require('../../utils/util.js')
-import { formatTime } from '../../utils/util'
 
 Component({
   data: {
     logs: [],
   },
-  lifetimes: {
-    attached() {
-      this.setData({
-        logs: (wx.getStorageSync('logs') || []).map((log: string) => {
-          return {
-            date: formatTime(new Date(log)),
-            timeStamp: log
-          }
-        }),
+  methods: {
+    addMedical() {
+      // 处理跳转到 remind 页面的逻辑
+
+      wx.navigateTo({
+        url: '/pages/medical/medical',
       })
-    }
+    },
   },
 })

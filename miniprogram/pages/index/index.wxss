@@ -25,12 +25,16 @@
   margin-top: 20rpx;
 }
 
-.add-reminder-btn {
-  padding: 20rpx;
-  background-color: #007aff; /* 设置按钮背景颜色为蓝色 */
-  color: #fff; /* 设置按钮文字颜色为白色 */
-}
 
 .date-menu {
   /* 在这里添加日期菜单的样式 */
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007acc;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }

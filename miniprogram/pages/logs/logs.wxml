@@ -2,10 +2,9 @@
 <view class="header">
   <image src="{{userInfo.avatarUrl}}" class="icon"></image>
   <text class="title">家庭药箱</text>
-  <view class="add-btn">添加</view>
 </view>
 <view class="content">
-  <view class="add-reminder-btn">添加药品</view>
+  <button bindtap="addMedical">添加药品</button>
   <view class="date-menu">
     <!-- 在这里添加你的日期菜单 -->
   </view>
