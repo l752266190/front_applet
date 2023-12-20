@@ -1,4 +1,3 @@
-// personalCenter.ts
 Component({
   data: {
     userInfo: {
