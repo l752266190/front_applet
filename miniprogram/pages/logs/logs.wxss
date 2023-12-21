@@ -4,6 +4,7 @@
     align-items: flex-end;
     padding: 30rpx;
     height: 100rpx;
+    background-color: rgb(245, 245, 245);
   }
 
 .icon {

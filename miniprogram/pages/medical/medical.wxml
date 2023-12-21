@@ -1,4 +1,8 @@
 <!-- remind.wxml -->
+<view class="header">
+  <text class="title" style="text-align: center;">添加药品</text>
+</view>
+
 <view class="reminder-page">
   <view class="input-group">
     <text>药品数量：</text>
