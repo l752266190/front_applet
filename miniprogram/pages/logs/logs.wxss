@@ -1,10 +1,10 @@
 /* index.wxss */
 .header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20rpx;
-}
+    display: flex;
+    align-items: flex-end;
+    padding: 30rpx;
+    height: 100rpx;
+  }
 
 .icon {
   width: 40rpx;
@@ -12,7 +12,7 @@
 }
 
 .title {
-  font-size: 24rpx;
+  font-size: 35rpx;
 }
 
 .add-btn {
