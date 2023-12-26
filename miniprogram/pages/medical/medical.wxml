@@ -1,4 +1,6 @@
-<!-- remind.wxml -->
+<view class="background">
+  <image src="./2.jpg" mode="aspectFill" class="background-image"></image>
+</view>
 <view class="header">
   <text class="title" style="text-align: center;">添加药品</text>
 </view>

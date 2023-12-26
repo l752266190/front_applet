@@ -1,4 +1,6 @@
-<!-- remind.wxml -->
+<view class="background">
+  <image src="./1.jpg" mode="aspectFill" class="background-image"></image>
+</view>
 <view class="header">
   <text class="title" style="text-align: center;">添加服药提醒</text>
 </view>

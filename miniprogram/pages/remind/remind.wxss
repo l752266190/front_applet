@@ -1,28 +1,67 @@
-/* remind.wxss */
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.background-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 保持纵横比并覆盖整个容器 */
+}
+
 .header {
-    display: flex;
-    align-items: flex-end;
-    padding: 30rpx;
-    height: 100rpx;
-    background-color: rgb(245, 245, 245);
-  }
+  display: flex;
+  align-items: flex-end;
+  padding: 30rpx;
+  height: 100rpx;
+  background-color: rgb(245, 245, 245);
+  z-index: 1; /* 确保头部在背景图上层 */
+}
 
 .title {
-    font-size: 35rpx;
+  font-size: 35rpx;
 }
 
 .reminder-page {
   padding: 20rpx;
+  z-index: 2; /* 确保内容在背景图下层 */
 }
+
 
 .input-group {
   margin-bottom: 20rpx;
+  position: relative; /* 设置为相对定位，以便后续使用伪类 */
+}
+
+input {
+  width: 100%;
+  height: 100rpx;
+  border: 1rpx solid transparent; /* 设置边框为透明，避免和伪类重叠 */
+  border-radius: 5rpx;
+  padding: 10rpx;
+  box-sizing: border-box;
+}
+
+.input-group::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: 1rpx solid red; /* 设置伪类的边框颜色为红色 */
+  border-radius: 5rpx;
+  pointer-events: none; /* 防止伪类干扰用户点击输入 */
 }
 
 textarea {
   width: 100%;
   height: 100rpx;
-  border: 1rpx solid #ccc;
+  border: 1rpx solid red; /* 修改为红色边框 */
   border-radius: 5rpx;
   padding: 10rpx;
   box-sizing: border-box;
@@ -31,7 +70,9 @@ textarea {
 input {
   width: 100%;
   height: 100rpx;
-  border: 1rpx solid #ccc;
+  border-width: 1rpx; /* 设置边框宽度 */
+  border-color: red; /* 设置边框颜色为红色 */
+  border-style: solid; /* 设置边框样式为实线 */
   border-radius: 5rpx;
   padding: 10rpx;
   box-sizing: border-box;

@@ -1,3 +1,6 @@
+<view class="background">
+  <image src="./3.jpg" mode="aspectFill" class="background-image"></image>
+</view>
 <view class="container">
   <view class="item" bindtap="onEditAvatar">头像：{{userInfo.avatarUrl}}</view>
   <view class="item" bindtap="onEditNickname">昵称：{{userInfo.nickName}}</view>
