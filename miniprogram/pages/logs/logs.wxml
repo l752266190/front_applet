@@ -1,7 +1,8 @@
-<!-- index.wxml -->
+<view class="background">
+  <image src="./2.jpg" mode="aspectFill" class="background-image"></image>
+</view>
 <view class="header">
   <image src="{{userInfo.avatarUrl}}" class="icon"></image>
-  <text class="title">家庭药箱</text>
 </view>
 <view class="content">
   <button bindtap="addMedical">添加药品</button>

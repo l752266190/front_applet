@@ -1,4 +1,8 @@
+
 <view class="personal-center">
+  <view class="background">
+  <image src="./3.jpg" mode="aspectFill" class="background-image"></image>
+  </view>
   <image class="avatar" src="{{ userInfo.avatarUrl }}" mode="aspectFill"></image>
   <text class="nickname">{{ userInfo.nickName }}</text>
   
