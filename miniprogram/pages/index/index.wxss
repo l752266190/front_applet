@@ -1,9 +1,10 @@
 /* index.wxss */
 .header {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20rpx;
+  align-items: flex-end;
+  padding: 30rpx;
+  height: 100rpx;
+  background-color: rgb(245, 245, 245);
 }
 
 .icon {
@@ -12,7 +13,7 @@
 }
 
 .title {
-  font-size: 24rpx;
+  font-size: 35rpx;
 }
 
 .add-btn {

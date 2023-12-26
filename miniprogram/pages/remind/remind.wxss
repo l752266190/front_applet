@@ -1,4 +1,15 @@
 /* remind.wxss */
+.header {
+    display: flex;
+    align-items: flex-end;
+    padding: 30rpx;
+    height: 100rpx;
+    background-color: rgb(245, 245, 245);
+  }
+
+.title {
+    font-size: 35rpx;
+}
 
 .reminder-page {
   padding: 20rpx;
