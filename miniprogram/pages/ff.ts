@@ -2,17 +2,35 @@ Component({
   data: {
     userInfo: {
       avatarUrl: 'path_to_your_default_avatar',
-      nickName: '未设置',
-      gender: '未设置',
-      birthday: '未设置',
-      height: '未设置',
-      weight: '未设置',
+      nickName: '华佗',
+      gender: '男',
+      birthday: '6.18',
+      height: '170',
+      weight: '60',
     },
+    isEditingNickname: false,
+
   },
   methods: {
     onEditAvatar() {
       // 处理编辑头像的逻辑
     },
+    startEditingNickname() {
+      this.setData({
+        isEditingNickname: true,
+      });
+    },
+
+    stopEditingNickname() {
+      this.setData({
+        isEditingNickname: false,
+      });
+    },
+     /* onInputNickname(event) {
+      this.setData({
+        newNickname: event.detail.value,
+      });
+    },*/
     onEditNickname() {
       // 处理编辑昵称的逻辑
     },

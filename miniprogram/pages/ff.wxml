@@ -1,13 +1,55 @@
-<view class="background">
-  <image src="./3.jpg" mode="aspectFill" class="background-image"></image>
-</view>
 <view class="container">
-  <view class="item" bindtap="onEditAvatar">头像：{{userInfo.avatarUrl}}</view>
-  <view class="item" bindtap="onEditNickname">昵称：{{userInfo.nickName}}</view>
-  <view class="item" bindtap="onEditGender">性别：{{userInfo.gender}}</view>
-  <view class="item" bindtap="onEditBirthday">生日：{{userInfo.birthday}}</view>
-  <view class="item" bindtap="onEditHeight">身高：{{userInfo.height}}</view>
-  <view class="item" bindtap="onEditWeight">体重：{{userInfo.weight}}</view>
+  <view class="item" bindtap="onEditAvatar">头像：<image class="avatar" src="./avatar.png" mode="aspectFill"></image></view>
+  <view class="item" bindtap="onEditNickname">昵称：<view wx:if="{{!isEditingNickname}}"bindtap="startEditingNickname">
+    {{userInfo.nickName}}
+  </view>
+  <input
+    wx:if="{{isEditingNickname}}"
+    type="text"
+    placeholder="请输入新昵称"
+    bindinput="onInputNickname"
+    value="{{newNickname}}"
+  /></view>
+  <view class="item" bindtap="onEditGender">性别：<view wx:if="{{!isEditingNickname}}">
+    {{userInfo.gender}}
+  </view>
+  <input
+    wx:if="{{isEditingNickname}}"
+    type="text"
+    placeholder="请输入新昵称"
+    bindinput="onInputNickname"
+    value="{{newNickname}}"
+  /></view>
+  <view class="item" bindtap="onEditBirthday">生日：<view wx:if="{{!isEditingNickname}}">
+    {{userInfo.birthday}}
+  </view>
+  <input
+    wx:if="{{isEditingNickname}}"
+    type="text"
+    placeholder="请输入新昵称"
+    bindinput="onInputNickname"
+    value="{{newNickname}}"
+  /></view>
+  <view class="item" bindtap="onEditHeight">身高：<view wx:if="{{!isEditingNickname}}">
+    {{userInfo.height}}
+  </view>
+  <input
+    wx:if="{{isEditingNickname}}"
+    type="text"
+    placeholder="请输入新昵称"
+    bindinput="onInputNickname"
+    value="{{newNickname}}"
+  /></view>
+  <view class="item" bindtap="onEditWeight">体重：<view wx:if="{{!isEditingNickname}}">
+    {{userInfo.weight}}
+  </view>
+  <input
+    wx:if="{{isEditingNickname}}"
+    type="text"
+    placeholder="请输入新昵称"
+    bindinput="onInputNickname"
+    value="{{newNickname}}"
+  /></view>
   <button class="back-btn" bindtap="onBack">返回</button>
   <button class="complete-btn" bindtap="onComplete">完成</button>
 </view>

@@ -1,3 +1,5 @@
+<!-- 第二个部分仿照第一个部分的结构 -->
+
 <view class="background">
   <image src="./2.jpg" mode="aspectFill" class="background-image"></image>
 </view>
@@ -8,5 +10,11 @@
   <button bindtap="addMedical">添加药品</button>
   <view class="date-menu">
     <!-- 在这里添加你的日期菜单 -->
+  </view>
+
+  <!-- 在这里添加药品的显示 -->
+  <view wx:for="{{medicals}}" wx:for-item="medical" wx:key="id" class="medical-item">
+    <text>{{medical.name}}</text>
+    <!-- 其他药品内容的显示 -->
   </view>
 </view>
